@@ -15,7 +15,7 @@ A sada, vrijeme je za prvi korak rada na vašem projektu. 🙂 Za upis/opis vaš
 
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
-Andrej Pavešić | apavesic22@foi.hr | 0016158653 | githubuser
+Andrej Pavešić | apavesic22@foi.hr | 0016158653 | AndrejPavesic
 
 
 ## Opis domene
