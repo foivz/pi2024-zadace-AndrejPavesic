@@ -24,7 +24,7 @@ vozila u voznom parku poduzeća, te definiranje autobusnih stanica u potpunosti 
 Cilj ovog projekta biti će softversko rješenje koje će služiti tome da pokrije sve gore navedene potrebe. Softver će morati omogućiti zaposlenicima digitalno bilježenje voznog parka, voznih linija i voznog reda te će isto morati zaposlenicima biti vidljivo nakon definiranja. Također, morat će imati mogućnost lociranja autobusa na temelju posljednje stanice koju je autobus neke vozne linije posjetio. Vozni red i vozne linije moraju biti u mogućnosti da budu ispisane kako putnicima tako i zaposlenicima poduzeća zbog poslovnih sastanaka ili nekih drugih sporednijih potreba. Sustav također mora omogućiti kupnju karata u online formatu te kupnju karata na autobusnim stanicama putem kioska za prodaju karata kako bi se poboljšala točnost u dolascima i odlascima voznih linija, i isto tako njihovo skeniranje pri ulasku u autobus. 
 
 ## Zadatak
-[Zadatak](https://github.com/foivz/pi2024-zadace-AndrejPavesic/blob/1436d132724873448e9857101f9565661b9b0058/Zadatak%20-%20Gradski%20prijevoz.pdf)
+Zadatak koji će se obrađivati je na sljedećoj [poveznici](https://github.com/foivz/pi2024-zadace-AndrejPavesic/blob/1436d132724873448e9857101f9565661b9b0058/Zadatak%20-%20Gradski%20prijevoz.pdf)
 
 ## Resursi
 (Zadaće je obvezno predati u obliku Wiki stranica na ovom repozitoriju. Slike i druge artefakte koje ćete koristiti na wiki stranicama smjestite u mapu dokumentacije u repozitoriju!)
