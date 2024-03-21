@@ -17,7 +17,7 @@ Andrej Pavešić | apavesic22@foi.hr | 0016158653 | AndrejPavesic
 
 
 ## Opis domene
-(Vlastitim riječima opišite domenu ili problem koji pokriva projekt vaše zadaće!)
+Domena ovog problema je ta da poduzeće Gradski autobusi Varaždin treba digitalizirati svoje poslovanje budući da im se poslovanje svodi na to da zaposlenici sve rade ručno i vode poslovanje "na papiru". Potreban je sustav koji će obavljati standardne poslovne procese u poduzeću na način da olakša zaposlenicima i ubrza sve procese. 
 
 ## Specifikacija projekta
 (Vlastitim riječima opišite zahtjeve za izradu ovog programskog proizvoda!)
