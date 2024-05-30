@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TrecaZadaca
 {
-    public partial class Form1 : Form
+    public partial class Tickets : Form
     {
-        public Form1()
+        public Tickets()
         {
             InitializeComponent();
         }

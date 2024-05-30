@@ -1,6 +1,6 @@
 ﻿namespace TrecaZadaca
 {
-    partial class Form1
+    partial class Buses
     {
         /// <summary>
         /// Required designer variable.
@@ -37,4 +37,3 @@
         #endregion
     }
 }
-
