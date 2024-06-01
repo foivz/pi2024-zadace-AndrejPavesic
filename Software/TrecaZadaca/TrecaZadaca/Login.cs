@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using DBLayer;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -15,16 +16,25 @@ namespace TrecaZadaca
     {
         public Login()
         {
+            DB.SetConfiguration("PI2324_apavesic22_DB", "PI2324_apavesic22_User", "qnqG5Szt");
             InitializeComponent();
         }
 
-            string usrZaposlenik = "zaposlenik";
-            string usrPutnik = "putnik";
-            string pswPutnik= "putnik";
-            string pswZaposlenik = "zaposlenik";
 
         private void btnPrijava_Click(object sender, EventArgs e)
         {
+            //DB.OpenConnection();
+
+            /*string userUsername = $"SELECT * FROM Users WHERE Username ='korisnik'";
+            string workerUsername = $"SELECT * FROM Users WHERE Username ='zaposlenik'";
+            string userPsw = $"SELECT * FROM Users WHERE Password ='korisnik'";
+            string workerPsw = $"SELECT * FROM Users WHERE Password ='zaposlenik'";*/
+
+            string userUsername = "korisnik";
+            string userPsw = "korisnik";
+            string workerUsername = "zaposlenik";
+            string workerPsw = "zaposlenik"; 
+
             if (txtUsername.Text == "" && txtPassword.Text == "")
             {
                 MessageBox.Show("Unesite podatke prije nego što pokušate odraditi prijavu", "Problem",
@@ -42,13 +52,13 @@ namespace TrecaZadaca
                 MessageBoxIcon.Error);
             }
 
-            else if (txtPassword.Text == pswPutnik && txtUsername.Text == usrPutnik)
+            else if (txtPassword.Text == userPsw && txtUsername.Text == userUsername)
             {
                 MessageBox.Show("Dobrodošli!", "Prijavljeni ste", MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
             }
 
-            if (txtPassword.Text == pswZaposlenik && txtUsername.Text == usrZaposlenik)
+            if (txtPassword.Text == workerPsw && txtUsername.Text == workerUsername)
             {
                 MessageBox.Show("Dobrodošli!", "Prijavljeni ste", MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
@@ -59,7 +69,7 @@ namespace TrecaZadaca
                 Close();
             }
 
-            if (txtPassword.Text == pswPutnik && txtUsername.Text == pswPutnik)
+            if (txtPassword.Text == userPsw && txtUsername.Text == userUsername)
             {
                 MessageBox.Show("Dobrodošli!", "Prijavljeni ste", MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
@@ -71,7 +81,8 @@ namespace TrecaZadaca
 
             }
 
-
+            //DB.CloseConnection();
         }
+
     }
 }

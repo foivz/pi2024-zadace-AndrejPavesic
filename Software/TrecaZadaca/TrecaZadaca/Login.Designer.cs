@@ -80,7 +80,7 @@
             this.btnPrijava.UseVisualStyleBackColor = false;
             this.btnPrijava.Click += new System.EventHandler(this.btnPrijava_Click);
             // 
-            // Prijava
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -93,7 +93,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Prijava";
+            this.Name = "Login";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prijava u VarTransit";

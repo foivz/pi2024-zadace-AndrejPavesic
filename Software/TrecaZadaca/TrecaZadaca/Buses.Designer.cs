@@ -28,17 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dgvBuses = new System.Windows.Forms.DataGridView();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.pI2324_apavesic22_DBDataSet = new TrecaZadaca.PI2324_apavesic22_DBDataSet();
+            this.busesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.busesTableAdapter = new TrecaZadaca.PI2324_apavesic22_DBDataSetTableAdapters.BusesTableAdapter();
+            this.iDbusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startingPointDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.destinationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBuses)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pI2324_apavesic22_DBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.busesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvBuses
             // 
+            this.dgvBuses.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvBuses.AutoGenerateColumns = false;
             this.dgvBuses.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBuses.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDbusDataGridViewTextBoxColumn,
+            this.startingPointDataGridViewTextBoxColumn,
+            this.destinationDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn});
+            this.dgvBuses.DataSource = this.busesBindingSource;
             this.dgvBuses.Location = new System.Drawing.Point(63, 12);
             this.dgvBuses.Name = "dgvBuses";
             this.dgvBuses.RowHeadersWidth = 51;
@@ -88,6 +107,52 @@
             this.btnSearch.Text = "PRETRAŽI";
             this.btnSearch.UseVisualStyleBackColor = true;
             // 
+            // pI2324_apavesic22_DBDataSet
+            // 
+            this.pI2324_apavesic22_DBDataSet.DataSetName = "PI2324_apavesic22_DBDataSet";
+            this.pI2324_apavesic22_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // busesBindingSource
+            // 
+            this.busesBindingSource.DataMember = "Buses";
+            this.busesBindingSource.DataSource = this.pI2324_apavesic22_DBDataSet;
+            // 
+            // busesTableAdapter
+            // 
+            this.busesTableAdapter.ClearBeforeFill = true;
+            // 
+            // iDbusDataGridViewTextBoxColumn
+            // 
+            this.iDbusDataGridViewTextBoxColumn.DataPropertyName = "ID_bus";
+            this.iDbusDataGridViewTextBoxColumn.HeaderText = "ID_bus";
+            this.iDbusDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.iDbusDataGridViewTextBoxColumn.Name = "iDbusDataGridViewTextBoxColumn";
+            this.iDbusDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // startingPointDataGridViewTextBoxColumn
+            // 
+            this.startingPointDataGridViewTextBoxColumn.DataPropertyName = "Starting point";
+            this.startingPointDataGridViewTextBoxColumn.HeaderText = "Starting point";
+            this.startingPointDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.startingPointDataGridViewTextBoxColumn.Name = "startingPointDataGridViewTextBoxColumn";
+            this.startingPointDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // destinationDataGridViewTextBoxColumn
+            // 
+            this.destinationDataGridViewTextBoxColumn.DataPropertyName = "Destination";
+            this.destinationDataGridViewTextBoxColumn.HeaderText = "Destination";
+            this.destinationDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.destinationDataGridViewTextBoxColumn.Name = "destinationDataGridViewTextBoxColumn";
+            this.destinationDataGridViewTextBoxColumn.Width = 125;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 125;
+            // 
             // Buses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -100,9 +165,11 @@
             this.Controls.Add(this.dgvBuses);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Buses";
-            this.Text = "Buses";
+            this.Text = "Vozne linije";
             this.Load += new System.EventHandler(this.Buses_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBuses)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pI2324_apavesic22_DBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.busesBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -114,5 +181,12 @@
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnSearch;
+        private PI2324_apavesic22_DBDataSet pI2324_apavesic22_DBDataSet;
+        private System.Windows.Forms.BindingSource busesBindingSource;
+        private PI2324_apavesic22_DBDataSetTableAdapters.BusesTableAdapter busesTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDbusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn startingPointDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn destinationDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
     }
 }

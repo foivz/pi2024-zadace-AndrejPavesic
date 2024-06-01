@@ -57,6 +57,11 @@
       <DependentUpon>Buses.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Bus.cs" />
+    <Compile Include="PI2324_apavesic22_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PI2324_apavesic22_DBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Tickets.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +94,17 @@
     <EmbeddedResource Include="Tickets.resx">
       <DependentUpon>Tickets.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="PI2324_apavesic22_DBDataSet.xsc">
+      <DependentUpon>PI2324_apavesic22_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PI2324_apavesic22_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PI2324_apavesic22_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PI2324_apavesic22_DBDataSet.xss">
+      <DependentUpon>PI2324_apavesic22_DBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -104,6 +120,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DLLs\DBLayer.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
