@@ -33,7 +33,10 @@ namespace TrecaZadaca
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-
+            frmSearchBuses searchLinije = new frmSearchBuses();
+            Hide();
+            searchLinije.ShowDialog();
+            Show();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

@@ -68,11 +68,17 @@
     <Compile Include="Delete.Designer.cs">
       <DependentUpon>Delete.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ažuriraj linije.cs">
+    <Compile Include="Search buses.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ažuriraj linije.Designer.cs">
-      <DependentUpon>Ažuriraj linije.cs</DependentUpon>
+    <Compile Include="Search buses.Designer.cs">
+      <DependentUpon>Search buses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateLines.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateLines.Designer.cs">
+      <DependentUpon>UpdateLines.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Bus.cs" />
     <Compile Include="Login.cs">
@@ -93,8 +99,8 @@
     <EmbeddedResource Include="Delete.resx">
       <DependentUpon>Delete.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ažuriraj linije.resx">
-      <DependentUpon>Ažuriraj linije.cs</DependentUpon>
+    <EmbeddedResource Include="UpdateLines.resx">
+      <DependentUpon>UpdateLines.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
