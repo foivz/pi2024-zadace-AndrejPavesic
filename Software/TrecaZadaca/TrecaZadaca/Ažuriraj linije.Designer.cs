@@ -17,6 +17,7 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUpdateBuses));
             this.txtID = new System.Windows.Forms.TextBox();
             this.txtStartingPoint = new System.Windows.Forms.TextBox();
             this.txtDestination = new System.Windows.Forms.TextBox();
@@ -59,36 +60,44 @@
             // lblID
             // 
             this.lblID.AutoSize = true;
+            this.lblID.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblID.Location = new System.Drawing.Point(30, 30);
             this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(23, 16);
+            this.lblID.Size = new System.Drawing.Size(26, 16);
             this.lblID.TabIndex = 4;
             this.lblID.Text = "ID:";
             // 
             // lblStartingPoint
             // 
             this.lblStartingPoint.AutoSize = true;
+            this.lblStartingPoint.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblStartingPoint.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStartingPoint.Location = new System.Drawing.Point(30, 70);
             this.lblStartingPoint.Name = "lblStartingPoint";
-            this.lblStartingPoint.Size = new System.Drawing.Size(88, 16);
+            this.lblStartingPoint.Size = new System.Drawing.Size(103, 16);
             this.lblStartingPoint.TabIndex = 5;
             this.lblStartingPoint.Text = "Starting Point:";
             // 
             // lblDestination
             // 
             this.lblDestination.AutoSize = true;
+            this.lblDestination.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblDestination.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDestination.Location = new System.Drawing.Point(30, 110);
             this.lblDestination.Name = "lblDestination";
-            this.lblDestination.Size = new System.Drawing.Size(77, 16);
+            this.lblDestination.Size = new System.Drawing.Size(89, 16);
             this.lblDestination.TabIndex = 6;
             this.lblDestination.Text = "Destination:";
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
+            this.lblName.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.Location = new System.Drawing.Point(30, 150);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(47, 16);
+            this.lblName.Size = new System.Drawing.Size(52, 16);
             this.lblName.TabIndex = 7;
             this.lblName.Text = "Name:";
             // 
@@ -98,12 +107,13 @@
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(200, 30);
             this.btnUpdate.TabIndex = 8;
-            this.btnUpdate.Text = "Update";
+            this.btnUpdate.Text = "Ažuriraj";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // frmUpdateBuses
             // 
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(400, 250);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.lblName);
@@ -114,8 +124,13 @@
             this.Controls.Add(this.txtDestination);
             this.Controls.Add(this.txtStartingPoint);
             this.Controls.Add(this.txtID);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmUpdateBuses";
-            this.Text = "Update Bus Line";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Ažuriraj autobusne linije";
             this.ResumeLayout(false);
             this.PerformLayout();
 
