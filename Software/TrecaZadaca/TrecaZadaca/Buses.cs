@@ -43,5 +43,13 @@ namespace TrecaZadaca
             dodajLinije.ShowDialog();
             Close();
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            frmDelete obrisi = new frmDelete();
+            Hide();
+            obrisi.ShowDialog();
+            Close();
+        }
     }
 }

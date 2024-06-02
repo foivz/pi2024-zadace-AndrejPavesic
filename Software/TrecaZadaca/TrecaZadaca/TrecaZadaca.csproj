@@ -62,6 +62,12 @@
     <Compile Include="AddBuses.Designer.cs">
       <DependentUpon>AddBuses.cs</DependentUpon>
     </Compile>
+    <Compile Include="Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete.Designer.cs">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Bus.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -77,6 +83,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddBuses.resx">
       <DependentUpon>AddBuses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete.resx">
+      <DependentUpon>Delete.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

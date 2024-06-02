@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddBuses));
             this.txtAddID = new System.Windows.Forms.TextBox();
             this.lblAddID = new System.Windows.Forms.Label();
             this.txtAddName = new System.Windows.Forms.TextBox();
@@ -130,10 +131,10 @@
             this.Controls.Add(this.lblAddID);
             this.Controls.Add(this.txtAddID);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmAddBuses";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje nove vozne linije";
             this.ResumeLayout(false);

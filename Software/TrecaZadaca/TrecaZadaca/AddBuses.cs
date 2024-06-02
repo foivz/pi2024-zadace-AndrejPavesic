@@ -39,6 +39,10 @@ namespace TrecaZadaca
                 string query = $"INSERT INTO Buses (ID, Starting_point, Destination, Name) VALUES ({id}, N'{startingPoint}', N'{Destination}', N'{Name}')";
                 DB.ExecuteCommand(query);
                 MessageBox.Show("Podaci su uspješno uneseni u bazu");
+                Buses buses = new Buses();
+                Close();
+                buses.ShowDialog();
+                Hide();
             }
 
             catch (Exception ex) { 
