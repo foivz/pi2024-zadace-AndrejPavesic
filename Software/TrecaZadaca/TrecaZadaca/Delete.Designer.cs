@@ -32,14 +32,16 @@
             this.lblLines = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
             this.txtID = new System.Windows.Forms.TextBox();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblLines
             // 
             this.lblLines.AutoSize = true;
-            this.lblLines.Location = new System.Drawing.Point(126, 47);
+            this.lblLines.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLines.Location = new System.Drawing.Point(126, 26);
             this.lblLines.Name = "lblLines";
-            this.lblLines.Size = new System.Drawing.Size(203, 16);
+            this.lblLines.Size = new System.Drawing.Size(241, 16);
             this.lblLines.TabIndex = 1;
             this.lblLines.Text = "Unesite ID linije koju želite brisati:";
             // 
@@ -47,7 +49,7 @@
             // 
             this.btnDelete.BackColor = System.Drawing.Color.Red;
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(243, 99);
+            this.btnDelete.Location = new System.Drawing.Point(243, 73);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(106, 37);
             this.btnDelete.TabIndex = 2;
@@ -57,16 +59,29 @@
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(129, 66);
+            this.txtID.Location = new System.Drawing.Point(129, 45);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(220, 22);
             this.txtID.TabIndex = 3;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(389, 131);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(83, 23);
+            this.btnCancel.TabIndex = 4;
+            this.btnCancel.Text = "Odustani";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // frmDelete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(484, 166);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.lblLines);
@@ -85,5 +100,6 @@
         private System.Windows.Forms.Label lblLines;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.Button btnCancel;
     }
 }

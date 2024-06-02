@@ -38,5 +38,12 @@ namespace TrecaZadaca
             Close();
         }
 
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Buses buses = new Buses();
+            Hide();
+            buses.ShowDialog();
+            Close();
+        }
     }
 }
