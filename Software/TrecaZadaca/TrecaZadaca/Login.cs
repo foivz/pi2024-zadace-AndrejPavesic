@@ -23,65 +23,56 @@ namespace TrecaZadaca
 
         private void btnPrijava_Click(object sender, EventArgs e)
         {
-            //DB.OpenConnection();
+       
 
-            /*string userUsername = $"SELECT * FROM Users WHERE Username ='korisnik'";
-            string workerUsername = $"SELECT * FROM Users WHERE Username ='zaposlenik'";
-            string userPsw = $"SELECT * FROM Users WHERE Password ='korisnik'";
-            string workerPsw = $"SELECT * FROM Users WHERE Password ='zaposlenik'";*/
+            string username = txtUsername.Text;
+            string password = txtPassword.Text;
 
-            string userUsername = "korisnik";
-            string userPsw = "korisnik";
-            string workerUsername = "zaposlenik";
-            string workerPsw = "zaposlenik"; 
-
-            if (txtUsername.Text == "" && txtPassword.Text == "")
+            if (string.IsNullOrEmpty(txtUsername.Text) && string.IsNullOrEmpty(txtPassword.Text))
             {
-                MessageBox.Show("Unesite podatke prije nego što pokušate odraditi prijavu", "Problem",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Unesite podatke prije nego što pokušate odraditi prijavu", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else if (string.IsNullOrEmpty(txtUsername.Text))
+            {
+                MessageBox.Show("Korisničko ime nije uneseno!", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            else if (string.IsNullOrEmpty(txtPassword.Text))
+            {
+                MessageBox.Show("Lozinka nije unesena!", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
 
-            else if (txtUsername.Text == "")
+            try
             {
-                MessageBox.Show("Korisničko ime nije uneseno!", "Problem",
-                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                DB.OpenConnection();
+                string query = $"SELECT COUNT(*) FROM Users WHERE Username = '{txtUsername.Text}' AND Password = '{txtPassword.Text}'";
+                int userCount = (int)DB.GetScalar(query);
+
+                if (userCount > 0)
+                {
+                    MessageBox.Show("Dobrodošli!", "Prijavljeni ste", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Buses vozniPark = new Buses();
+                    Hide();
+                    vozniPark.ShowDialog();
+                    Close();
+                }
+                else
+                {
+                    MessageBox.Show("Neispravno korisničko ime ili lozinka.", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else if (txtPassword.Text == "")
+            catch (Exception ex)
             {
-                MessageBox.Show("Lozinka nije unesena!", "Problem", MessageBoxButtons.OK,
-                MessageBoxIcon.Error);
+                MessageBox.Show($"Dogodila se greška: {ex.Message}");
             }
-
-            else if (txtPassword.Text == userPsw && txtUsername.Text == userUsername)
+            finally
             {
-                MessageBox.Show("Dobrodošli!", "Prijavljeni ste", MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
-            }
-
-            if (txtPassword.Text == workerPsw && txtUsername.Text == workerUsername)
-            {
-                MessageBox.Show("Dobrodošli!", "Prijavljeni ste", MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
-
-                Buses vozniPark = new Buses();
-                Hide();
-                vozniPark.ShowDialog();
-                Close();
-            }
-
-            if (txtPassword.Text == userPsw && txtUsername.Text == userUsername)
-            {
-                MessageBox.Show("Dobrodošli!", "Prijavljeni ste", MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
-
-                Tickets karte = new Tickets();
-                Hide();
-                karte.ShowDialog();
-                Close();
-
+                DB.CloseConnection();
             }
 
-            //DB.CloseConnection();
+
         }
 
     }
