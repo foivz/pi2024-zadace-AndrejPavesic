@@ -141,6 +141,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmUpdateBuses";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ažuriraj autobusne linije";
             this.ResumeLayout(false);

@@ -54,7 +54,7 @@
             this.lblStartingPoint.AutoSize = true;
             this.lblStartingPoint.Location = new System.Drawing.Point(30, 30);
             this.lblStartingPoint.Name = "lblStartingPoint";
-            this.lblStartingPoint.Size = new System.Drawing.Size(94, 16);
+            this.lblStartingPoint.Size = new System.Drawing.Size(88, 16);
             this.lblStartingPoint.TabIndex = 3;
             this.lblStartingPoint.Text = "Starting Point:";
             // 
@@ -63,7 +63,7 @@
             this.lblDestination.AutoSize = true;
             this.lblDestination.Location = new System.Drawing.Point(30, 70);
             this.lblDestination.Name = "lblDestination";
-            this.lblDestination.Size = new System.Drawing.Size(79, 16);
+            this.lblDestination.Size = new System.Drawing.Size(77, 16);
             this.lblDestination.TabIndex = 4;
             this.lblDestination.Text = "Destination:";
             // 
@@ -72,7 +72,7 @@
             this.lblName.AutoSize = true;
             this.lblName.Location = new System.Drawing.Point(30, 110);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(45, 16);
+            this.lblName.Size = new System.Drawing.Size(47, 16);
             this.lblName.TabIndex = 5;
             this.lblName.Text = "Name:";
             // 
@@ -107,10 +107,12 @@
             this.Controls.Add(this.txtDestination);
             this.Controls.Add(this.txtStartingPoint);
             this.Name = "frmSearchBuses";
+            this.ShowIcon = false;
             this.Text = "Search Buses";
             ((System.ComponentModel.ISupportInitialize)(this.dgvResults)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

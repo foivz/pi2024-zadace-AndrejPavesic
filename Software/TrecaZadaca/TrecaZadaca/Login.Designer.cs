@@ -100,6 +100,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Login";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prijava u VarTransit";
             this.ResumeLayout(false);

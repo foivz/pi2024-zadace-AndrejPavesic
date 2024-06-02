@@ -99,6 +99,9 @@
     <EmbeddedResource Include="Delete.resx">
       <DependentUpon>Delete.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Search buses.resx">
+      <DependentUpon>Search buses.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UpdateLines.resx">
       <DependentUpon>UpdateLines.cs</DependentUpon>
     </EmbeddedResource>

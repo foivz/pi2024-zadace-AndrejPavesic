@@ -123,6 +123,7 @@
             this.Controls.Add(this.dgvBuses);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Buses";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vozne linije";
             this.Load += new System.EventHandler(this.Buses_Load);

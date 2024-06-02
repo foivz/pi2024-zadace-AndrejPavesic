@@ -153,6 +153,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmAddBuses";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dodavanje nove vozne linije";
             this.ResumeLayout(false);
