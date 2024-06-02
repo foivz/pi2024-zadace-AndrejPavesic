@@ -59,5 +59,13 @@ namespace TrecaZadaca
             login.ShowDialog();
             Close();
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            frmUpdateBuses linije = new frmUpdateBuses();
+            Hide();
+            linije.ShowDialog();
+            Close();
+        }
     }
 }

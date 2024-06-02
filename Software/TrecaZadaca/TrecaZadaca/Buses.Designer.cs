@@ -84,6 +84,7 @@
             this.btnUpdate.TabIndex = 3;
             this.btnUpdate.Text = "PROMIJENI";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAdd
             // 
