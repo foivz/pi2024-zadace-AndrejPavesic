@@ -39,18 +39,20 @@
             // lblUsername
             // 
             this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.Location = new System.Drawing.Point(63, 46);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(97, 16);
+            this.lblUsername.Size = new System.Drawing.Size(112, 16);
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "Korisničko ime:";
             // 
             // lblPassword
             // 
             this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.Location = new System.Drawing.Point(63, 88);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(56, 16);
+            this.lblPassword.Size = new System.Drawing.Size(64, 16);
             this.lblPassword.TabIndex = 1;
             this.lblPassword.Text = "Lozinka:";
             // 
@@ -72,6 +74,7 @@
             // btnPrijava
             // 
             this.btnPrijava.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnPrijava.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrijava.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnPrijava.Location = new System.Drawing.Point(401, 130);
             this.btnPrijava.Name = "btnPrijava";
@@ -85,6 +88,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(595, 208);
             this.Controls.Add(this.btnPrijava);
             this.Controls.Add(this.txtPassword);
