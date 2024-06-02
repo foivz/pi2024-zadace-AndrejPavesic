@@ -54,6 +54,10 @@ namespace TrecaZadaca
                     DB.ExecuteCommand(updateQuery);
                     MessageBox.Show("Vozna linija je uspješno ažurirana.", "Uspjeh", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
+                    Buses buses = new Buses();
+                    Hide();
+                    buses.ShowDialog();
+                    Close();
                 }
             }
             catch (Exception ex)
@@ -64,6 +68,14 @@ namespace TrecaZadaca
             {
                 DB.CloseConnection();
             }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Buses buses = new Buses();
+            Hide();
+            buses.ShowDialog();
+            Close();
         }
     }
 }
