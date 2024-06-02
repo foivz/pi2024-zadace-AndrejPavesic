@@ -129,6 +129,7 @@
             this.btnCancel.TabIndex = 9;
             this.btnCancel.Text = "Odustani";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // frmAddBuses
             // 
