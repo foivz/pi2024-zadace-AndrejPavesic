@@ -15,6 +15,9 @@ Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
 Andrej Pavešić | apavesic22@foi.hr | 0016158653 | AndrejPavesic
 
+Podaci za prijavu u aplikaciju VarTransit:
+Korisničko ime: zaposlenik
+Lozinka: zaposlenik
 
 ## Opis domene
 U poduzeću Gradski autobusi Varaždin svakodnevno se njihovim autobusima prevoze putnici gradskim i prigradskim relacijama iz različitih potreba. Vrlo velik broj putnika se svakoga dana oslanja na njihov prijevoz kako bi stigli u školu, na posao, na tržnicu, liječniku ili nešto sl.. Korisnici gradskog prijevoza zahtijevaju visoku kvalitetu prijevoza i očekuju da će svakoga dana poduzeće ispuniti njihova očekivanja. Zaposlenici poduzeća svakoga se dana trude da udovolje potrebama svojih krajnjih korisnika tako što definiraju vozne linije, vozni park i vozni red te se brinu da sve teče glatko svakoga dana. Međutim, problem je u tome što poduzeće nije digitalizirano i poslovni procesi se odvijaju "na papiru". Vođenje poduzeća na papiru često predstavlja problem u njegovom glatkom funkcioniranju te stoga poduzeće želi prijeći na digitalizirani način rada odnosno da se papiri iz poduzeća maknu te da se najprije krene od njihovih zaposlenika. Zaposlenici bi sada definiranje
